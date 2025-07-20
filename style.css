@@ -440,6 +440,12 @@ justify-content: center;
     height:150px !important;;
 }
 }
+@media(max-width:500px)
+{
+#about{
+    margin-bottom: 100px !important;
+}
+}
 /* #endregion About */
 
 /* #region about journey */
@@ -839,6 +845,11 @@ justify-content: center;
 }
 #skills #p44{
     width:60%;
+}
+@media(max-width:600px){
+#skills{
+    margin:0 !important;
+}
 }
 @media(max-width:500px)
 {
