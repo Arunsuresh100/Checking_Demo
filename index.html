@@ -6,68 +6,44 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 <!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
 <!-- MDB -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.min.css"
-  rel="stylesheet"
-/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://img.icons8.com/nolan/512w/portfolio.png" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.min.css" rel="stylesheet"/>
+<!-- animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- title image -->
+<link rel="shortcut icon" href="https://img.icons8.com/nolan/512w/portfolio.png" type="image/x-icon">
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
   </head> 
   <body>
     <header>
-      <!-- nav for lap -->
-    <!-- <nav class="navbar bg-body-tertiary"> -->
+    <!-- nav for lap -->
     <nav class="navbar bg-" id="lap_nav">
       <div class="container-fluid">
         <a class="navbar-brand position-relative ms-5" href="#">
           <!-- <img src="https://img.icons8.com/nolan/512w/portfolio.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/> -->
-          <span class="text-white position-absolute ms-2 fw-medium" style="font-family: 'Dancing Script', cursive;" id="logo-name">My Portfolio</span>
+          <span class="text-white position-absolute ms-2 fw-medium" style="font-family: 'Dancing Script', cursive;cursor:default;" id="logo-name">My Portfolio</span>
         </a>
         <!-- nav lap items -->
         <ul class="nav justify-content-end" id="ul1">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#project">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#skills">Skills & Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#project">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills & Resume</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
           <!-- 2 social media in nav -->
           <li class="nav-item" id="to_hidde_socialmedia">
             <a id="notdo" class="nav-link text-white" href="#">
-              <img class="contact_img"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" alt="" width="30" height="30">
+              <img class="contact_img"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" alt="github page link" width="30" height="30">
             </a>
           </li>
           <li class="nav-item" id="to_hidde_socialmedia">
             <a id="notdo" class="nav-link text-white" href="#">
-              <img class="contact_img"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="" width="30" height="30">
+              <img class="contact_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="whatsapp link for contact" width="30" height="30">
             </a>
           </li>
         </ul>
@@ -78,8 +54,8 @@
   <nav class="navbar" id="mobile_nav">
   <div class="container-fluid">
     <a class="navbar-brand position-relative ms-2" href="#">
-          <img src="https://img.icons8.com/nolan/512w/portfolio.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
-          <span class="text-white position-absolute ms-2" style="top:3px;font-family: 'Dancing Script', cursive;">My Portfolio</span>
+          <!-- <img src="https://img.icons8.com/nolan/512w/portfolio.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/> -->
+          <span class="text-white position-absolute ms-2" style="font-family: 'Dancing Script', cursive;cursor:default;">My Portfolio</span>
         </a>
     <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
       <span class="navbar-toggler-icon"></span>
@@ -91,7 +67,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active text-white fw-500" aria-current="page" href="#hero" >Home</a>
+            <a class="nav-link active text-white fw-500" aria-current="page" href="#hero">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white fw-500" href="#about">About</a>
@@ -109,7 +85,7 @@
       </div>
     </div>
   </div>
-      </nav>
+  </nav>
       <!-- mobile nav end -->
     </header>
     <!-- hero (Home)-->
@@ -166,7 +142,7 @@
           make an impact.
         </p>
         <div class="mt-2">
-          <button type="button" class="btn btn-outline-dark" id="btn1" data-aos="zoom-in-up" data-aos-duration="1500">See More!</button>
+          <button type="button" class="btn btn-outline-dark" id="btn1" data-aos="zoom-in-up" data-aos-duration="1500" onclick="location.href='#journey'">See More!</button>
         </div>
       </div>
     </section>
@@ -174,7 +150,7 @@
     <!-- Journey -->
     <section
       class="Journey mb-5 bg- d-flex justify-content-center align-items-center"
-      style="min-height: 60vh">
+      style="min-height: 60vh" id="journey">
       <div class="container d-flex m-5 flex-column align-items-center">
         <h1 class="text-center mb-5" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true">My <span>Journey</span></h1>
         <div
@@ -261,7 +237,7 @@
           </div>
         </div>
         <div class="mt-2">
-          <button type="button" class="btn btn-outline-dark" data-aos="zoom-in-up" data-aos-duration="1500">See More!</button>
+          <button type="button" class="btn btn-outline-dark" data-aos="zoom-in-up" data-aos-duration="1500" onclick="location.href='#project'">See More!</button>
         </div>
       </div>
     </section>
@@ -282,7 +258,7 @@
                 <h5 class="card-title">Portal for Sapling Sale<h5>
               </div>
                <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project1'">View Details</button>
               </div>
             </div>
           </div>
@@ -293,7 +269,7 @@
                 <h5 class="card-title">Military Communication<h5>
               </div>
               <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project2'">View Details</button>
               </div>
             </div>
           </div>
@@ -304,13 +280,13 @@
                 <h5 class="card-title">Calender Creation<h5>
               </div>
                <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project3'">View Details</button>
               </div>
             </div>
           </div>
         </div>
         <!-- project 1 -->
-        <div class="mb-5 mt-5 d-flex flex-column gap-1">
+        <div class="mb-5 mt-5 d-flex flex-column gap-1" id="project1">
           <h1 id="project_head1">1. Online Portal for Sapling Sale</h1>
           <div class="tools fs-4" id="projects_tools">Tools: 
             <span class="d-flex gap-3">
@@ -322,33 +298,13 @@
           </div>
           <div id="carouselExampleIndicators"class="carousel slide">
             <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner" style="box-shadow:1px 2px 2px 4px var(); border-radius:15px;">
               <div class="carousel-item active">
-                <img
-                  src="project1.png"
-                  class="d-block w-100 rounded-4"
-                  alt="..."
-                />
+                <img src="project1.png" class="d-block w-100 rounded-4" alt="..."/>
               </div>
               <div class="carousel-item">
                 <img src="pro1_img2.png" class="d-block w-100" alt="..." />
@@ -357,28 +313,12 @@
                 <img src="pro1_img3.png" class="d-block w-100" alt="..." />
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -398,47 +338,26 @@
             business models.
           </p>
           <div class="mt-2 mb-5 d-flex gap-2" id="button1">
-            <button type="button" class="btn btn-outline-dark" id="btn1">Abstract</button
-            ><button type="button" class="btn btn-outline-dark" id="btn2">Code</button>
+            <button type="button" class="btn btn-outline-dark" id="btn1" onclick="alert('on progress')">Abstract</button>
+            <button type="button" class="btn btn-outline-dark" id="btn2" onclick="alert('on progress')">Code</button>
           </div>
         </div>
         <!--  -->
         <!-- project 2 -->
-        <div class="mb-5 mt-5 d-flex flex-column gap-1">
+        <div class="mb-5 mt-5 d-flex flex-column gap-1" id="project2">
           <h1 id="project_head1">2. Online Military Communication System</h1>
           <div class="tools fs-4" id="projects_tools">Tools: <span>
             <i class="fab fa-python" style="font-size:30px;color:yellow;"></i>
           </span></div>
           <div id="carouselExampleIndicators2" class="carousel slide">
             <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators2"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators2"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators2"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active rounded-5">
-                <img
-                  src="pro2.png"
-                  class="d-block w-100 rounded-4"
-                  alt="..."
-                />
+                <img src="pro2.png" class="d-block w-100 rounded-4" alt="..."/>
               </div>
               <div class="carousel-item rounded-5">
                 <img src="project2.png" class="d-block w-100" alt="..." />
@@ -447,28 +366,12 @@
                 <img src="pro2_img4.png" class="d-block w-100" alt="..." />
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators2"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators2"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -486,13 +389,13 @@
             support tactical and strategic goals.
           </p>
           <div class="mt-2 mb-5 d-flex gap-2" id="button1">
-            <button type="button" class="btn btn-outline-dark" id="btn1">Abstract</button
-            ><button type="button" class="btn btn-outline-dark" id="btn2">Code</button>
+            <button type="button" class="btn btn-outline-dark" id="btn1" onclick="alert('on progress')">Abstract</button
+            ><button type="button" class="btn btn-outline-dark" id="btn2" onclick="alert('on progress')">Code</button>
           </div>
         </div>
         <!--  -->
         <!-- project 3 -->
-        <div class="mb-5 mt-5 d-flex flex-column gap-1">
+        <div class="mb-5 mt-5 d-flex flex-column gap-1" id="project3">
           <h1 id="project_head1">3. Calender Creation</h1>
           <div class="tools fs-4" id="projects_tools">Tools: <span>
             <i class="fas fa-biohazard" style="font-size:30px;color:burlywood;"></i>
@@ -508,13 +411,13 @@
             formatted output, and using arrays to manage months and days.
           </p>
           <div class="mt-2 mb-2 d-flex gap-2 " id="button1">
-            <button type="button" id="btn1" class="btn btn-outline-dark">Abstract</button
-            ><button type="button" id="btn2" class="btn btn-outline-dark">Code</button>
+            <button type="button" id="btn1" class="btn btn-outline-dark" onclick="alert('on progress')">Abstract</button
+            ><button type="button" id="btn2" class="btn btn-outline-dark" onclick="alert('on progress')">Code</button>
           </div>
         </div>
         <!--  -->
         <div class="mb-5 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-dark" id="more">More Details</button>
+          <button type="button" class="btn btn-outline-dark" id="more" onclick="location.href='#skills'">More Details</button>
         </div>
       </div>
     </section>
@@ -526,10 +429,8 @@
     >
       <div class="container d-flex flex-column gap-3">
         <h1 class="text-center">My <span>Skills</span></h1>
-        <div
-          class="row w-100 mt-2 justify-content-center align-items-start text-dark"
-        >
-          <div class="col-md-6 d-flex flex-column align-items-center">
+        <div class="row w-100 mt-2 justify-content-center align-items-start text-dark">
+        <div class="col-md-6 d-flex flex-column align-items-center">
             <h3 id="skills_details">Coding Skills</h3>
             <div class="card mb-3" style="width: 100%">
               <div class="card-body">
@@ -644,35 +545,27 @@
       </div>
     </section>
     <div class="m-2 d-flex gap-2 justify-content-center" id="buttons-out">
-          <button type="button" class="btn btn-outline-secondary" id="btn1">
+          <button type="button" class="btn btn-outline-secondary" id="btn1" onclick="alert('will do in the future')">
             View Resume</button
-          ><button type="button" class="btn btn-outline-secondary" id="btn2">
+          ><button type="button" class="btn btn-outline-secondary" id="btn2" onclick="alert('will do in the future')">
             Download Resume
           </button>
         </div>
     <!-- skills end -->
     <!-- contact -->
-    <section
-      class="contact bg- d-flex flex-column justify-content-center align-items-center"
-      id="contact"
-      style="min-height: 40vh;"
-    >
-      <div
-        class="container d-flex flex-column justify-content-center align-items-center"
-      >
+    <section class="contact bg- d-flex flex-column justify-content-center align-items-center" id="contact" style="min-height: 40vh;">
+      <div class="container d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center mb-3" id="contact_h1">Get in <span>Touch</span></h1>
         <div class="mt-2">
           <p class="fs-6 text-center">
             Whether you're interested in working together, have a question, or
             just want to connect I'm always happy to chat.
           </p>
-          <div
-            class="mt-2 mb-4 d-flex flex-column gap-3 justify-content-center align-items-center"
-          >
-            <button type="button" class="btn btn-outline-dark w-50">
+          <div class="mt-2 mb-4 d-flex flex-column gap-3 justify-content-center align-items-center">
+            <button type="button" class="btn btn-outline-dark w-50" onclick="alert('will do in the future')">
               📧 Email
             </button>
-            <button type="button" class="btn btn-outline-dark w-50">
+            <button type="button" class="btn btn-outline-dark w-50" onclick="alert('will do in the future')">
               🔗 linkedin
             </button>
           </div>
@@ -686,13 +579,7 @@
 
       <!--  -->
     <!-- script -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-  crossorigin="anonymous"
-></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
-<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
