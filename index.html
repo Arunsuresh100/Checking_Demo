@@ -54,7 +54,6 @@
   <nav class="navbar" id="mobile_nav">
   <div class="container-fluid">
     <a class="navbar-brand position-relative ms-2" href="#">
-          <!-- <img src="https://img.icons8.com/nolan/512w/portfolio.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/> -->
           <span class="text-white position-absolute ms-2" style="font-family: 'Dancing Script', cursive;cursor:default;">My Portfolio</span>
         </a>
     <button id="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" >
@@ -152,13 +151,13 @@
       class="Journey mb-5 bg- d-flex justify-content-center align-items-center"
       style="min-height: 60vh" id="journey">
       <div class="container d-flex m-5 flex-column align-items-center">
-        <h1 class="text-center mb-5" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="true">My <span>Journey</span></h1>
+        <h1 class="text-center mb-5" data-aos="zoom-in-up" data-aos-duration="1500" id="my_journey">My <span>Journey</span></h1>
         <div
           class="row w-100 mt-2 justify-content-center align-items-start">
           <!-- Education Column -->
           <div class="col-md-6 d-flex flex-column align-items-center">
             <h3 data-aos="zoom-in" data-aos-duration="1500">Education</h3>
-            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -170,7 +169,7 @@
               </div>
             </div>
             <!-- box 2 -->
-            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -182,7 +181,7 @@
               </div>
             </div>
             <!-- box 3 -->
-            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -199,7 +198,7 @@
           <div class="col-md-6 d-flex flex-column align-items-center">
             <h3 id="second_one" data-aos="zoom-in" data-aos-duration="1500">Projects</h3>
             <!-- box 1 -->
-            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -211,7 +210,7 @@
               </div>
             </div>
             <!-- box 2 -->
-            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500" data-aos-once="true">
+            <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -223,7 +222,7 @@
               </div>
             </div>
             <!-- box 3 -->
-           <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500" data-aos-once="true">
+           <div class="card mb-3" style="width: 90%" id="journey_box" data-aos="flip-right" data-aos-duration="1500">
               <div class="card-body d-flex flex-column gap-2">
               <div class="time_line">
                 <div class="dot"></div>
@@ -243,13 +242,9 @@
     </section>
     <!--Journey end -->
     <!-- project -->
-    <section
-      id="project"
-      class="project mb-5 bg- d-flex justify-content-center align-items-center"
-      style="min-height: 100vh"
-    >
+    <section id="project" class="project mb-5 bg- d-flex justify-content-center align-items-center" style="min-height: 100vh">
       <div class="container">
-        <h1 class="text-center m-5" id="my_projects">My <span>Projects</span></h1>
+        <h1 class="text-center" id="my_projects" data-aos="zoom-in-up" data-aos-duration="1500">My <span>Projects</span></h1>
         <div class="row mb-5 row-cols-1 row-cols-md-3 g-4" id="three_box_details">
           <div class="col">
             <div class="card" id="my_project_box">
@@ -258,7 +253,7 @@
                 <h5 class="card-title">Portal for Sapling Sale<h5>
               </div>
                <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project1'">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project1'" id="view_details_project">View Details</button>
               </div>
             </div>
           </div>
@@ -269,7 +264,7 @@
                 <h5 class="card-title">Military Communication<h5>
               </div>
               <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project2'">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project2'" id="view_details_project">View Details</button>
               </div>
             </div>
           </div>
@@ -280,7 +275,7 @@
                 <h5 class="card-title">Calender Creation<h5>
               </div>
                <div class="ms-3 mb-3">
-                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project3'">View Details</button>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='#project3'" id="view_details_project">View Details</button>
               </div>
             </div>
           </div>
@@ -290,13 +285,13 @@
           <h1 id="project_head1">1. Online Portal for Sapling Sale</h1>
           <div class="tools fs-4" id="projects_tools">Tools: 
             <span class="d-flex gap-3">
-              <i class="fab fa-html5" style="font-size: 30px; color: orange;"></i>
-              <i class="fab fa-css3-alt" style="font-size: 30px; color:white;"></i>
-              <i class="fab fa-php" style="font-size: 30px; color:pink;"></i>
-              <i class="fas fa-database" style="font-size: 30px; color:gray;"></i>
+              <i class="fab fa-html5" style="font-size: 30px; color: burlywood"></i>
+              <i class="fab fa-css3-alt" style="font-size: 30px; color:burlywood"></i>
+              <i class="fab fa-php" style="font-size: 30px; color:burlywood;"></i>
+              <i class="fas fa-database" style="font-size: 30px; color:burlywood;"></i>
             </span>
           </div>
-          <div id="carouselExampleIndicators"class="carousel slide">
+          <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -347,10 +342,10 @@
         <div class="mb-5 mt-5 d-flex flex-column gap-1" id="project2">
           <h1 id="project_head1">2. Online Military Communication System</h1>
           <div class="tools fs-4" id="projects_tools">Tools: <span>
-            <i class="fab fa-python" style="font-size:30px;color:yellow;"></i>
+            <i class="fab fa-python" style="font-size:30px;color:burlywood;"></i>
           </span></div>
           <div id="carouselExampleIndicators2" class="carousel slide">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators" style="border-radius:20px;">
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -423,16 +418,13 @@
     </section>
     <!-- project end -->
     <!-- skills and resume -->
-    <section
-      class="skills mb-5 bg- d-flex justify-content-center align-items-center"
-      id="skills"
-    >
-      <div class="container d-flex flex-column gap-3">
-        <h1 class="text-center">My <span>Skills</span></h1>
+    <section class="skills mb-5 bg- d-flex justify-content-center align-items-center" id="skills">
+      <div class="container d-flex flex-column gap-1">
+        <h1 class="text-center" id="my_skills" data-aos="zoom-in-up" data-aos-duration="1500">My <span>Skills</span></h1>
         <div class="row w-100 mt-2 justify-content-center align-items-start text-dark">
         <div class="col-md-6 d-flex flex-column align-items-center">
-            <h3 id="skills_details">Coding Skills</h3>
-            <div class="card mb-3" style="width: 100%">
+            <h3 id="skills_details" data-aos="zoom-in" data-aos-duration="1500">Coding Skills</h3>
+            <div class="card mb-3" style="width: 100%" id="card-border" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-body">
                <div class="skill_box">
                 <div class="skill_details">
@@ -486,7 +478,7 @@
             </div>
           </div>
           <div class="col-md-6 d-flex flex-column align-items-center">
-            <h3 id="skills_details">Professional Skills</h3>
+            <h3 id="skills_details" data-aos="zoom-in" data-aos-duration="1500">Professional Skills</h3>
             <div class="card mb-3" style="width: 100%">
               <div class="card-body">
                <div class="skill_box">
@@ -555,9 +547,9 @@
     <!-- contact -->
     <section class="contact bg- d-flex flex-column justify-content-center align-items-center" id="contact" style="min-height: 40vh;">
       <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h1 class="text-center mb-3" id="contact_h1">Get in <span>Touch</span></h1>
+        <h1 class="text-center mb-3" id="contact_h1" data-aos="zoom-in" data-aos-duration="1500">Get in <span>Touch</span></h1>
         <div class="mt-2">
-          <p class="fs-6 text-center">
+          <p class="text-center">
             Whether you're interested in working together, have a question, or
             just want to connect I'm always happy to chat.
           </p>
@@ -580,10 +572,10 @@
       <!--  -->
     <!-- script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    once: true,       // Only trigger once (scroll down)
     offset: 120,      // Trigger animation 120px before element enters view
     duration: 1000    // Global duration (can override per element)
   });
