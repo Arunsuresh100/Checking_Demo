@@ -6,7 +6,7 @@ button{
     text-transform: capitalize !important;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 body{
     background-color: var(--bg-color);
@@ -201,6 +201,7 @@ h1 span{
         transform: translateX(0) scale(1);
     }
 }
+/* #region responsive */
 @media(max-width:1200px)
 {
 #hero .btn{
@@ -313,6 +314,8 @@ justify-content: center;
     font-size: 1.3rem;
 } 
 }
+/* #endregion responsive */
+
 /* #endregion hero*/
 
 /* #region About */
@@ -412,6 +415,8 @@ justify-content: center;
     transform: scale(.95);
     background-color:#0cb9db;
 }
+/* #endregion about */
+/* #region responsive */
 @media(max-width:1200px)
 {
 #about h1{
@@ -446,6 +451,7 @@ justify-content: center;
     margin-bottom: 100px !important;
 }
 }
+/* endregion responsive */
 /* #endregion About */
 
 /* #region about journey */
@@ -453,6 +459,18 @@ justify-content: center;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 30px;
+}
+#my_journey span{
+     background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
+    color:transparent;
+    background-clip: text;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    will-change: animation;
+    font-weight: 600;
+    filter: drop-shadow(1px 1px .5px rgb(129, 129, 129));
+    animation:movebackground-about 10s linear infinite;
+    font-weight: 700;
 }
 .Journey h3{
     color: var(--highlight-color);
@@ -525,6 +543,7 @@ justify-content: center;
     transform: scale(.95);
     background-color:#0cb9db;
 }
+/* #region resonsive */
 @media(max-width:1200px)
 {
 .Journey h1{
@@ -590,6 +609,7 @@ justify-content: center;
     margin: 10px !important;
 }
 }
+/* #endregion responsive */
 /* #endregion about journey */
 
 /* #region Projects */
@@ -597,15 +617,50 @@ justify-content: center;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 100px !important;
+    filter: drop-shadow(1px 1px .5px rgb(129, 129, 129));
+}
+#my_projects span{
+    background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
+    color:transparent;
+    background-clip: text;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    will-change: animation;
+    animation:movebackground-about 10s linear infinite;
+}
+#view_details_project{
+    background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
+    color:black !important;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    will-change: animation;
+    font-weight: 600;
+    animation:movebackground-about 5s linear infinite;
+}
+.carousel{
+    border-radius:15px;
+    box-shadow: 1px 1px 2px var(--highlight-color),-1px -1px 2px var(--highlight-color);
+}
+#view_details_project:hover{
+    background: transparent;
+    color:var(--highlight-color) !important;
 }
 #project .card-title{
     font-size: 1.2rem;
+    font-weight: 600;
 }
 #my_project_box{
     background-color:rgba(0,0,0,.4);
     border: 1px solid var(--highlight-color);
     color:white;
     padding:5px;
+    transition: transform .5s ease-in-out,box-shadow .5s ease-in-out;
+    will-change: transform;
+}
+#my_project_box:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 3px var(--highlight-color);
+
 }
 #my_project_box button{
     border: 1px solid var(--highlight-color);
@@ -615,21 +670,22 @@ justify-content: center;
     margin-bottom: 80px !important;
 }
 #project_head1{
-    font-weight: 700;
+    font-weight: 800;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom:10px !important;
-    /* color: var(--highlight-color); */
-    color:white;
+    hyphens: auto !important;
+    color: var(--highlight-color);
+    /* color:white; */
     font-size:2.2rem;
+    filter:drop-shadow(2px 1px 1px rgb(103, 103, 103))
 }
 #projects_tools{
     font-weight: 600;
     display: flex;
     align-items: center;
     gap:1rem;
-}
-#projects_tools{
     margin:10px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #projects_tools span{
     display: flex;
@@ -637,8 +693,11 @@ justify-content: center;
 }
 .project_heading{
     font-size: 1.5rem;
+    text-align: left !important;
+    hyphens: auto !important;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #button1 #btn1{
     background-color: var(--highlight-color);
@@ -734,6 +793,18 @@ justify-content: center;
     font-size: 3rem;
     font-weight: 700;
 }
+#contact #contact_h1 span{
+    background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
+    color:transparent;
+    background-clip: text;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    will-change: animation;
+    animation:movebackground-about 10s linear infinite;
+}
+#contact p{
+    font-size:1.1rem;
+}
 #contact .btn{
     background-color: var(--highlight-color);
     border: 1px solid var(--highlight-color);
@@ -774,10 +845,20 @@ justify-content: center;
     font-weight: 700;
     margin-bottom: 10px;
 }
+#my_skills span{
+    background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
+    color:transparent;
+    background-clip: text;
+    overflow: hidden;
+    background-repeat: repeat-y;
+    will-change: animation;
+    animation:movebackground-about 10s linear infinite;
+}
 #skills_details{
     font-size: 1.8rem;
-    color:white !important;
-    font-weight: 500;
+    /* color:white !important; */
+    font-weight: 600;
+    color:var(--highlight-color);
     margin:25px 0px;
 }
 #skills .card{
@@ -788,6 +869,13 @@ justify-content: center;
     flex-direction: column;
     gap: 1rem;
     border: 1px solid var(--highlight-color);
+    transform: scale(1);
+    transition: transform .5s ease-in-out,box-shadow .5s ease-in-out;
+    will-change: transform;
+}
+#skills .card:hover{
+    box-shadow: 1px 1px 3px var(--highlight-color);
+    transform: scale(1.005);
 }
 #buttons-out button{
     border: 1px solid var(--highlight-color);
@@ -846,6 +934,14 @@ justify-content: center;
 #skills #p44{
     width:60%;
 }
+@media(max-width:768px){
+#skills h1{
+    font-size: 2.5rem;
+}
+#skills_details{
+    font-size: 1.5rem;
+}
+}
 @media(max-width:600px){
 #skills{
     margin:0 !important;
@@ -854,10 +950,10 @@ justify-content: center;
 @media(max-width:500px)
 {
 #skills h1{
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 #skills_details{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 }
 /* #endregion skills */
