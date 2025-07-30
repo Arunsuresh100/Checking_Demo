@@ -1,7 +1,21 @@
 :root{
     --highlight-color:#0dcaf0;
     --bg-color: #111827;
+    --dark:black;
+    --white:white;
 }
+/*  */
+header{
+    position:relative;
+    z-index:1040;
+}
+#mobile_nav{
+    display: none;
+}
+.offcanvas {
+  z-index: 1050 !important;
+}
+/*  */
 button{
     text-transform: capitalize !important;
 }
@@ -317,7 +331,6 @@ justify-content: center;
 /* #endregion responsive */
 
 /* #endregion hero*/
-
 /* #region About */
 #about h1{
     font-size: 3rem;
@@ -358,7 +371,6 @@ justify-content: center;
 .my_image{
     width: 250px; height: 250px; overflow: hidden; border-radius: 50%; 
     box-shadow: 1px 1px 4px white, -1px -1px 4px var(--highlight-color);
-    /* border:1px solid white; */
     transform: scale(1);
     transition: transform 1s ease-in-out;
     animation:pluseShadow 8s ease-in-out infinite;
@@ -368,7 +380,6 @@ justify-content: center;
     box-shadow: 1px 1px 4px #ff4d4d, -1px -1px 4px #ffae42;
     }
     25%{
-    /* box-shadow: 1px 1px 4px green; */
     box-shadow: 1px 1px 4px #3eff8b, -1px -1px 4px #00e5ff;
     }
     50%{
@@ -390,21 +401,16 @@ justify-content: center;
     hyphens:auto;
 }
 #about #btn1{
-    /* background-color:var(--highlight-color); */
     border-color:var(--highlight-color);
-    /* color:black; */
     color:var(--highlight-color);
     transform: scale(1);
     will-change: transform;
 }
 #about #btn1:hover{
-    /* background-color:var(--highlight-color); */
     transform: scale(1.05);
     color:black;
     border-color:transparent;
     background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
-    /* color:transparent; */
-    /* background-clip: text; */
     overflow: hidden;
     background-repeat: repeat-y;
     will-change: animation;
@@ -415,7 +421,6 @@ justify-content: center;
     transform: scale(.95);
     background-color:#0cb9db;
 }
-/* #endregion about */
 /* #region responsive */
 @media(max-width:1200px)
 {
@@ -451,9 +456,8 @@ justify-content: center;
     margin-bottom: 100px !important;
 }
 }
-/* endregion responsive */
+/* #endregion responsive */
 /* #endregion About */
-
 /* #region about journey */
 .Journey h1{
     font-size: 3rem;
@@ -531,8 +535,6 @@ justify-content: center;
     color:black;
     border-color:transparent;
     background: url('https://media.istockphoto.com/id/1423205688/vector/background-illustration-of-the-starry-sky-drawn-in-watercolor.jpg?s=612x612&w=0&k=20&c=mwNUbIaLcn_97BcxfYVmrl-Pe6fm1LbaNkI5EFDhAxI=');
-    /* color:transparent; */
-    /* background-clip: text; */
     overflow: hidden;
     background-repeat: repeat-y;
     will-change: animation;
@@ -611,7 +613,6 @@ justify-content: center;
 }
 /* #endregion responsive */
 /* #endregion about journey */
-
 /* #region Projects */
 #my_projects{
     font-size: 3rem;
@@ -660,7 +661,6 @@ justify-content: center;
 #my_project_box:hover{
     transform: scale(1.01);
     box-shadow: 1px 1px 3px var(--highlight-color);
-
 }
 #my_project_box button{
     border: 1px solid var(--highlight-color);
@@ -675,7 +675,6 @@ justify-content: center;
     margin-bottom:10px !important;
     hyphens: auto !important;
     color: var(--highlight-color);
-    /* color:white; */
     font-size:2.2rem;
     filter:drop-shadow(2px 1px 1px rgb(103, 103, 103))
 }
@@ -734,6 +733,7 @@ justify-content: center;
     text-justify: inter-word;
     hyphens: auto;
 }
+/* #region responsive */
 @media(max-width:1200px)
 {
 #my_projects{
@@ -742,9 +742,6 @@ justify-content: center;
 }
 @media(max-width:992px)
 {
-/* #my_project_box{
-    height: 230px;
-} */
 #my_projects{
     font-size: 2.8rem;
     margin:50px !important
@@ -783,8 +780,8 @@ justify-content: center;
     font-size: 1.2rem;
 }
 }
+/* #endregion responsive */
 /* #endregion projects */
-
 /* #region contact */
 #contact{
     margin:100px 0px 50px !important;
@@ -825,21 +822,22 @@ justify-content: center;
     border: 1px solid var(--highlight-color);
     color:black;
 }
+/* #region responsive */
 @media(max-width:767px){
-    #contact #contact_h1{
+#contact #contact_h1{
     font-size: 2.5rem;
     font-weight: 700;
 }
 }
 @media(max-width:500px){
-    #contact #contact_h1{
+#contact #contact_h1{
     font-size: 2.2rem;
-    font-weight: 700;
 }
 #contact p{
-    font-size:1rem;
+    font-size: 1rem;
 }
 }
+/* #endregion responsive */
 /* #endregion contact */
 /* #region skills */
 #skills h1{
@@ -858,7 +856,6 @@ justify-content: center;
 }
 #skills_details{
     font-size: 1.8rem;
-    /* color:white !important; */
     font-weight: 600;
     color:var(--highlight-color);
     margin:25px 0px;
@@ -923,7 +920,6 @@ justify-content: center;
 #skills #p4{
     width:70%;
 }
-/*  */
 #skills #p11{
     width:60%;
 }
@@ -936,6 +932,7 @@ justify-content: center;
 #skills #p44{
     width:60%;
 }
+/* #region responsive */
 @media(max-width:768px){
 #skills h1{
     font-size: 2.5rem;
@@ -958,4 +955,5 @@ justify-content: center;
     font-size: 1.3rem;
 }
 }
+/* #endregion responsive */
 /* #endregion skills */
