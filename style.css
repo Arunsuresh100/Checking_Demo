@@ -482,18 +482,18 @@ justify-content: center;
     margin-bottom: 20px;
     font-size:2rem;
 }
-#journey_box{
+.journey_box{
     background-color:rgba(0,0,0,.3);
     border:1px solid var(--highlight-color);
     color:white;
     border-radius: 15px;
     min-height: 200px;
     cursor: default;
-    transform: scale(1);
+    /* transform: scale(1); */
     will-change: transform;
-    transition: transform .8s ease-in-out;
+    /* transition: transform .8s ease-in-out; */
 }
-#journey_box:hover{
+.journey_box:hover{
     transform: scale(1.01);
     box-shadow: 1px 1px 2px var(--highlight-color),-1px -1px 2px var(--highlight-color);
 }
@@ -559,7 +559,7 @@ justify-content: center;
     font-size: 1.2rem;
     font-weight: 700;
 }
-#journey_box{
+.journey_box{
     background-color:rgba(0,0,0,.3);
     border:1px solid var(--highlight-color);
     color:white;
@@ -571,7 +571,7 @@ justify-content: center;
 .Journey h1{
     font-size:2.8rem;
 }
-#journey_box{
+.journey_box{
     background-color:rgba(0,0,0,.3);
     border:1px solid var(--highlight-color);
     color:white;
@@ -591,7 +591,7 @@ justify-content: center;
 #second_one{
     margin-top:50px;
 }
-#journey_box{
+.journey_box{
     min-height: 200px;
 }
 }
@@ -603,7 +603,7 @@ justify-content: center;
 .Journey h3{
     font-size: 1.3rem;
 } 
-#journey_box{
+.journey_box{
     min-height: 250px;
 }
 .Journey .container{
