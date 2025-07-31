@@ -127,12 +127,12 @@
     </section>
     <!--hero end -->
     <!-- about -->
-    <section id="about" class="about mb-5 bg- d-flex justify-content-center align-items-center" style="min-height: 80vh" data-aos="fade-up"
+   <section id="about" class="about mb-5 bg- d-flex justify-content-center align-items-center" style="min-height: 80vh" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
       <div class="container d-flex flex-column justify-content-center align-items-center gap-2">
         <h1>About <span>Me</span></h1>
         <div class="my_image">
-          <img src="https://img.pikbest.com/png-images/20250519/animated-man-in-suit-smiling-professional-business-cartoon-male-character_11723385.png!sw800" oncontextmenu="return false;" alt="my_photo" width="100" style="width: 100%; height: 100%"/>
+          <img src="./pro.jpg" oncontextmenu="return false;" alt="my_photo" width="100"/>
         </div>
         <h3>Frontend Developer!</h3>
         <p class="text-center">
@@ -611,13 +611,10 @@
  <!-- .............................build in the upcoming days.......................... -->
  <!--  -->
      <!-- footer -->
-
       <!--  -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    
     <!-- 2. Load AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <!-- 3. Initialize AOS -->
     <script>
       AOS.init({
@@ -626,26 +623,21 @@
         once:false
       });
     </script>
-    
     <!-- 4. The Final Custom Script -->
     <script>
     document.addEventListener('DOMContentLoaded', function () {
       var offcanvasElement = document.getElementById('offcanvasNavbar');
       var bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
       var navLinks = document.querySelectorAll('#offcanvasNavbar .nav-link');
-
       navLinks.forEach(function(link) {
         link.addEventListener('click', function (event) {
           // 1. Prevent the browser from jumping to the anchor immediately
           event.preventDefault();
-
           // 2. Get the destination URL from the link's href
           var targetId = this.getAttribute('href');
           var targetElement = document.querySelector(targetId);
-
           // 3. Tell the offcanvas to start closing
           bsOffcanvas.hide();
-
           // 4. Listen for the 'hidden' event, which fires *after* the offcanvas is fully closed
           offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
             // 5. Now that the page is stable, scroll to the target element
