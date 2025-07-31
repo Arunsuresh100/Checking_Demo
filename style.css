@@ -528,6 +528,9 @@ justify-content: center;
     transform: scale(1);
     will-change: transform;
 }
+.journey_about{
+    hyphens: auto;
+}
 .Journey .btn:hover{
     color: var(--highlight-color);
     border-color:transparent;
@@ -609,6 +612,11 @@ justify-content: center;
 .Journey .container{
     padding:0 !important;
     margin: 10px !important;
+}
+.journey_box{
+    /* background-color: red; */
+    padding:8px;
+    width:95% !important;
 }
 }
 /* #endregion responsive */
@@ -761,6 +769,9 @@ justify-content: center;
 #project_head1{
     font-size:2.2rem;
 }
+#projects_tools svg{
+    width:20px;
+}
 }
 @media(max-width:500px)
 {
@@ -778,6 +789,18 @@ justify-content: center;
 }
 .project_heading{
     font-size: 1.2rem;
+}
+#project .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#my_project_box{
+    width:95%;
+    padding:5px;
+}
+.card-body{
+    padding:5px;
 }
 }
 /* #endregion responsive */
@@ -822,6 +845,9 @@ justify-content: center;
     border: 1px solid var(--highlight-color);
     color:black;
 }
+.contact_btn_in_contact_page{
+    width:40%;
+}
 /* #region responsive */
 @media(max-width:767px){
 #contact #contact_h1{
@@ -835,6 +861,9 @@ justify-content: center;
 }
 #contact p{
     font-size: 1rem;
+}
+.contact_btn_in_contact_page{
+    width:50%;
 }
 }
 /* #endregion responsive */
@@ -856,7 +885,7 @@ justify-content: center;
 }
 #skills_details{
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 700;
     color:var(--highlight-color);
     margin:25px 0px;
 }
@@ -932,6 +961,19 @@ justify-content: center;
 #skills #p44{
     width:60%;
 }
+.skill_remaning{
+    /* background-color:rgba(0,0,0,.3); */
+    border-radius: 8px;
+    /* border:1px solid var(--highlight-color) */
+}
+.skill_remaning svg{
+    display: inline;
+    transition: transform .5s ease-in-out;
+    will-change: transform;
+}
+.skill_remaning svg:hover{
+    transform: scale(1.1);
+}
 /* #region responsive */
 @media(max-width:768px){
 #skills h1{
@@ -939,6 +981,9 @@ justify-content: center;
 }
 #skills_details{
     font-size: 1.5rem;
+}
+.skill_remaning svg{
+    width:20px;
 }
 }
 @media(max-width:600px){
@@ -953,6 +998,21 @@ justify-content: center;
 }
 #skills_details{
     font-size: 1.3rem;
+}
+.skills_details{
+    font-weight: 600;
+}
+.start_skills_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#card-border{
+    padding:5px;
+}
+.skill_remaning{
+    gap:.7rem !important;
 }
 }
 /* #endregion responsive */
