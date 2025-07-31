@@ -183,6 +183,11 @@ h1 span{
         width:100%;
     }
 }
+@keyframes blind {
+    50%{
+        border-color:transparent;
+    }
+}
 #hero_img{
     animation:slideInTop 2.5s ease-in-out forwards,bounce 2.5s  infinite alternate 2.5s;
     filter: drop-shadow(1px 1px 3px var(--highlight-color));
@@ -374,6 +379,11 @@ justify-content: center;
     transform: scale(1);
     transition: transform 1s ease-in-out;
     animation:pluseShadow 8s ease-in-out infinite;
+}
+.my_image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 }
 @keyframes pluseShadow{
     0%{
@@ -968,7 +978,7 @@ justify-content: center;
 }
 .skill_remaning svg{
     display: inline;
-    transition: transform .5s ease-in-out;
+    transition: transform .3s ease-in-out;
     will-change: transform;
 }
 .skill_remaning svg:hover{
@@ -1012,6 +1022,8 @@ justify-content: center;
     padding:5px;
 }
 .skill_remaning{
+    /* background-color: red; */
+    margin-bottom: 5px;
     gap:.7rem !important;
 }
 }
